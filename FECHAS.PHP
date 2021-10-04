@@ -42,11 +42,33 @@ if ($segundos<"10") {
     echo "segundos:".$segundos;
 }else {
     echo "segundos intermedios"."<br>";
-    echo "segundos:".$segundos;
+    echo "segundos:".$segundos."<br>"."<br>"."<br>";
 }
 
+echo "Ejercicio switchcase"."<br>";
 
+$colores ="naranja";
+switch ($colores) {
+    case 'Rojo':
+        echo "la sangre es de color:".$colores."<br>";
+        break;
+        
+        case 'Verde':
+            echo "la hierba es de color:".$colores."<br>";
+            break;
+    
+            case 'Amarillo':
+                echo "El sol  es de color:".$colores."<br>";
+                break;
 
+          case 'Azul':
+                    echo "El cielo  es de color:".$colores."<br>";
+                    break;
+    default:
+    echo "El color :".$colores." no esta registrado en la base de datos"."<br>";
+    break;
+        break;
+}
 
  ?>
 
