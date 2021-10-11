@@ -16,7 +16,7 @@
 <body>
     <?php
     $dia = date("l");
-    $hora = date("G"); 
+    $hora = date("G");
     switch ($dia) {
     case 'Monday':
      if ($hora == 8) {
