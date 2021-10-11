@@ -307,6 +307,6 @@
                             break;  
     }
     ?>
-    <a href="tablaphp1.html">Volver a la página principal</a>
+    <a href="http://localhost">Volver a la página principal</a>
 </body>
 </html>
