@@ -44,8 +44,8 @@
                 echo "Hora de salir";
             }
 
-            echo "El horario de hoy es el siguiente: "."<br>";
-            echo "
+            echo "El horario de hoy lunes es: "."<br>";
+            
             <table>
                     <tr>
                     <td>Lunes</td>
