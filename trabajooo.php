@@ -44,8 +44,8 @@
                 echo "Hora de salir";
             }
 
-            echo "El horario de hoy lunes es: "."<br>";
-            
+            echo "El horario de hoy es el siguiente: "."<br>";
+            echo "
             <table>
                     <tr>
                     <td>Lunes</td>
@@ -72,7 +72,7 @@
                     <td>Servicios en red</td>
                     </tr>
                 </tr>
-            </table>";
+            </table>"; 
             break;
             case 'Tuesday':
                 if ($hora == 8) {
