@@ -13,8 +13,7 @@
     <fieldset>
     <label for="Nombre">numero1 <input type="text"> </label><br>
     <label for="Nombre">numero2<input type="text"> </label><br>
-
-
+<h2>operaciones </h2>
     <label for="Nombre"> <input type="button" name= "" value="+"> </label><br>
         
         <label for="Nombre"><input type="button" name= "" value="-"> </label><br>
