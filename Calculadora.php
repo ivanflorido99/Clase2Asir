@@ -11,13 +11,12 @@
 
 <form>
     <fieldset>
-    <label for="Nombre"> <input type="text" value="0">> </label><br>
-    <label for="Nombre"><input type="text" value="0">> </label><br>
+    <input type="text" value="0">> </label><br>
+    <input type="text" value="0">> </label><br>
 <h2>operaciones </h2>
 
 
         <label for="Nombre"> <input type="button" name= "" value="+"> </label><br>
-
         <label for="Nombre"><input type="button" name= "" value="-"> </label><br>
         <label for="Nombre"><input type="button" name= "" value="X"> </label><br>
         <label for="Nombre"><input type="button" name= "" value="/"> </label><br>
@@ -40,9 +39,28 @@
 
 <?php
 
+function suma($num1,$num2);
+$res=$num1+$num2;
+echo "$res";
+
+function suma($num1,$num2);
+$res=$num1-$num2;
+echo "$res";
 
 
+function suma($num1,$num2);
+$res=$num1*$num2;
+echo "$res";
 
+
+function suma($num1,$num2);
+$res=$num1/$num2;
+echo "$res";
+
+
+function suma($num1,$num2);
+$res=$num1%$num2;
+echo "$res";
 
 
 
