@@ -11,16 +11,19 @@
 
 <form>
     <fieldset>
-    <label for="Nombre">numero1 <input type="text"> </label><br>
-    <label for="Nombre">numero2<input type="text"> </label><br>
+    <label for="Nombre"> <input type="text" value="0">> </label><br>
+    <label for="Nombre"><input type="text" value="0">> </label><br>
 <h2>operaciones </h2>
-    <label for="Nombre"> <input type="button" name= "" value="+"> </label><br>
-        
+
+
+        <label for="Nombre"> <input type="button" name= "" value="+"> </label><br>
+
         <label for="Nombre"><input type="button" name= "" value="-"> </label><br>
-        <label for="Nombre"><input type="button" name= "" value="*"> </label><br>
+        <label for="Nombre"><input type="button" name= "" value="X"> </label><br>
         <label for="Nombre"><input type="button" name= "" value="/"> </label><br>
         <label for="Nombre"><input type="button" name= "" value="%"> </label><br>
         
+
 
 
 
@@ -34,6 +37,18 @@
 
 
 </form>
+
+<?php
+
+
+
+
+
+
+
+
+?>
+
 
 </body>
 </html>
