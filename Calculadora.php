@@ -9,22 +9,23 @@
 <body>
 <H1>Calculadora</H1>
 
-<form>
+<form method="post">
     <fieldset>
     <input type="text" value="0">> </label><br>
     <input type="text" value="0">> </label><br>
 <h2>operaciones </h2>
 
 
-        <label for="Nombre"> <input type="button" name= "" value="+"> </label><br>
-        <label for="Nombre"><input type="button" name= "" value="-"> </label><br>
-        <label for="Nombre"><input type="button" name= "" value="X"> </label><br>
-        <label for="Nombre"><input type="button" name= "" value="/"> </label><br>
-        <label for="Nombre"><input type="button" name= "" value="%"> </label><br>
-        <label for="Nombre"><input type="button" name= "" value="Raiz"> </label><br>
-        <label for="Nombre"><input type="button" name= "" value="^2"> </label><br>
-        <label for="Nombre"><input type="button" name= "" value="^3"> </label><br>
-        <label for="Nombre"><input type="button" name= "" value="^x"> </label><br>
+        <label for="Suma"> <input type="button" name= "suma" value="+"> </label><br>
+        <label for="Resta"><input type="button" name= "resta" value="-"> </label><br>
+        <label for="Multiplicacion"><input type="button" name= "multiplicacion" value="X"> </label><br>
+        <label for="Division"><input type="button" name= "division" value="/"> </label><br>
+        <label for="Nombre"><input type="button" name= "resto" value="%"> </label><br>
+        <label for="Raiz"><input type="button" name= "raiz" value="Raiz"> </label><br>
+        <label for="Elevado a 2"><input type="button" name= "elevado2" value="^2"> </label><br>
+        <label for="Elevado a 3"><input type="button" name= "elevado3" value="^3"> </label><br>
+        <label for="elevado a cualquier"><input type="button" name= "elevadox" value="^x"> </label><br>
+        <label for="fibo"><input type="button" name= "fibonacci" value="fibonacci"> </label><br>
 
 
 
@@ -39,6 +40,20 @@
 </form>
 
 <?php
+
+$suma=$_GET["suma"];
+$resta=$_GET["resta"];
+$multiplicacion=$_GET["multiplicacion"];
+$division=$_GET["division"];
+$resto=$_GET["resto"];
+$raiz=$_GET["raiz"];
+$elevado2=$_GET["elevado2"];
+$elevado3=$_GET["elevado3"];
+$elevadox=$_GET["elevadox"];
+
+
+
+
 
 $num1=2;
 $num2=3;
