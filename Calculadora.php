@@ -9,23 +9,23 @@
 <body>
 <H1>Calculadora</H1>
 
-<form method="post">
+<form  method="post">
     <fieldset>
     <input type="text" value="0">> </label><br>
     <input type="text" value="0">> </label><br>
 <h2>operaciones </h2>
 
 
-        <label for="Suma"> <input type="button" name= "suma" value="+"> </label><br>
-        <label for="Resta"><input type="button" name= "resta" value="-"> </label><br>
-        <label for="Multiplicacion"><input type="button" name= "multiplicacion" value="X"> </label><br>
-        <label for="Division"><input type="button" name= "division" value="/"> </label><br>
-        <label for="Nombre"><input type="button" name= "resto" value="%"> </label><br>
-        <label for="Raiz"><input type="button" name= "raiz" value="Raiz"> </label><br>
-        <label for="Elevado a 2"><input type="button" name= "elevado2" value="^2"> </label><br>
-        <label for="Elevado a 3"><input type="button" name= "elevado3" value="^3"> </label><br>
-        <label for="elevado a cualquier"><input type="button" name= "elevadox" value="^x"> </label><br>
-        <label for="fibo"><input type="button" name= "fibonacci" value="fibonacci"> </label><br>
+        <label for="Suma"> <input type="button" name= "operador" value="+"> </label><br>
+        <label for="Resta"><input type="button" name= "operador" value="-"> </label><br>
+        <label for="Multiplicacion"><input type="button" name= "operador" value="X"> </label><br>
+        <label for="Division"><input type="button" name= "operador" value="/"> </label><br>
+        <label for="Nombre"><input type="button" name= "operador" value="%"> </label><br>
+        <label for="Raiz"><input type="button" name= "operador" value="Raiz"> </label><br>
+        <label for="Elevado a 2"><input type="button" name= "operador" value="^2"> </label><br>
+        <label for="Elevado a 3"><input type="button" name= "operador" value="^3"> </label><br>
+        <label for="elevado a cualquier"><input type="button" name= "operador" value="^x"> </label><br>
+        <label for="fibo"><input type="button" name= "fibonacci" value="operador"> </label><br>
 
 
 
@@ -33,13 +33,17 @@
 
 <input type="submit"> <br>
 
-
+<input type="reset"> <br>
 
 
 
 </form>
 
 <?php
+
+$num1=$_POST["num1"];
+$num2==$_POST["num2"];
+$selector=$_POST["operando"];
 
 $suma=$_GET["suma"];
 $resta=$_GET["resta"];
@@ -96,44 +100,39 @@ function Resto($num1,$num2){
 }
 
 
-function Raiz($num1){
-    $res=sqrt($num1);
-    echo "$res"."<br>";
-}
-
-
-function Cuadrado($num1){
-    $res=($num1*$num1);
-    echo "$res"."<br>";
-}
-
-function Cubo($num1){
-    $res=($num1*$num1*$num1);
-    echo "$res"."<br>";
-}
-
-function Cualquierexponente($num1,$num2){
-    $res=pow($num1,$num2);
-    echo "$res"."<br>";
-}
-
-function Fibonacci($num1){
-$n=0;
-$n1=1;
-$n2=0;
-
-    while ($num1>0) {
-        $n2=$n1+$n;
-        $n1=$n;
-        $n=$n2;
-        $num1--;
-        echo "$n2 ";
-    
         
-    } 
+    
 
 
 }
+
+switch ($operador) {
+    case '+':
+       suma($num1,$num2);
+        break;
+    case '-':
+        resta($num1,$num2);
+    break;
+ 
+    case 'X':
+        Multiplicacion($num1,$num2);
+     break;
+    case '/':
+        Division($num1,$num2);
+ break;
+    case '%':
+        Resto($num1,$num2);
+    break;
+
+    
+    default:
+        
+        break;
+}
+
+
+
+
 
 
 
@@ -142,11 +141,6 @@ Resta($num1,$num2);
 Multiplicacion($num1,$num2);
 Division($num1,$num2);
 Resto($num1,$num2);
-Raiz($num1);
-Cuadrado($num1);    
-Cubo($num1);
-Cualquierexponente($num1,$num2);
-Fibonacci(8);
 
 
 
