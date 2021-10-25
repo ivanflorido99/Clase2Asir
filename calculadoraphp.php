@@ -66,6 +66,22 @@ function exponente($num1,$num2){
 
 
 
+function Fibonacci($num1){
+    $n=0;
+    $n1=1;
+    $n2=0;
+    
+        while ($num1>0) {
+            $n2=$n1+$n;
+            $n1=$n;
+            $n=$n2;
+            $num1--;
+            echo "$n2 ";
+        }
+    }
+
+
+
 
 
 
@@ -102,6 +118,12 @@ switch ($operador) {
     case 'exponente':
         exponente($num1,$num2);
     break;
+
+    
+    case 'fibonacci':
+        fibonacci($num1,$num2);
+    break;
+
 
     default:
         echo "error";
