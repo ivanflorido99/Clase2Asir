@@ -72,11 +72,12 @@ function Fibonacci($num1){
     $n2=0;
     
         while ($num1>0) {
+            echo $n2 ." ";
             $n2=$n1+$n;
             $n1=$n;
             $n=$n2;
             $num1--;
-            echo "$n2 ";
+        
         }
     }
 
