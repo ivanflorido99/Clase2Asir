@@ -121,7 +121,7 @@ switch ($operador) {
 
     
     case 'fibonacci':
-        fibonacci($num1,$num2);
+        fibonacci($num1);
     break;
 
 
