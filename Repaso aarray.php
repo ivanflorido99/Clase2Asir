@@ -1,6 +1,6 @@
 <?php
 
-#array normales
+#Array normales
 $numero = 8;
 $numero = 3;
 $numero = 7;
@@ -55,7 +55,7 @@ $parada++;
 }
 
 
-#array asociativos
+#Array asociativos
 
 $alumno = array("nombre" => "Miguel",
 "Apellido"=> "kerry",
@@ -69,7 +69,7 @@ echo $alumno["ESTASAPROBADO"];
 
 
 <?php
-//bucle anidados independientes
+//Bucle anidados independientes
 print "<br><b>Bucle Independiente</b>"."<br>";
 for ($inicio=0; $inicio < 5 ; $inicio++) { 
   print "resultado inicio(bucel exterior): ".$inicio."<br>";
@@ -80,7 +80,7 @@ for ($inicio=0; $inicio < 5 ; $inicio++) {
   }
 }
 
-//bucles de forma dependiente
+//Bucles de forma dependiente
 
 print "<br><b>Bucle Dependiente</b>"."<br>";
 for ($varexterior=0; $varexterior < 5 ; $varexterior++) { 
@@ -136,7 +136,7 @@ print_r ($capitales);
 echo "<br>";
 
 
-//Añadir elemento a un array
+//Añadir elemento a un Array
 
 
 $capitales["Cataluña"]="Barcelona";
@@ -167,10 +167,10 @@ $notasAsignaturamigue=["LMI"=>0,
 print_r ($notasAsignaturamigue);
 
 
-//Union de arrays
+//Union de Arrays
 
 echo "<br>";
-print "<br>Union ARRAY</b>"."<br>";
+print "<br>Union ARRAY </b>"."<br>";
 
 $coches1=array("Seat","Renault","Dacia");
 $coches2=["Bmw","Audi"];
@@ -207,15 +207,48 @@ print "<br><b>Copiar Archivoo</b>"."<br>";
 
 $Copiacapiatales=$capitales;
 print_r($Copiacapiatales);
+
 echo"<br>";
+echo "<br>";
+
+
+//CLASE 12 DE NOVIEMBRE
+
+echo "<br>";
+$colores1=["Verde","Azul","Amarillo","Rojo"];
+$colores2=["Verde","Azul","Amarillo","Rojo","Blanco"];
+echo "<br>";
+
+$resultadodiferencia=array_diff($colores2,$colores1);
+$resultadoUnion= array_merge($colores2,$colores1);
+$resultadoUnionInterseccion=array_intersect($colores2,$colores1);
+
+
+array_push($colores2,"Purpura","Marron","Celeste");
+
+sort($colores2,SORT_REGULAR);
+
+print_r($resultadodiferencia);
+
+echo "<br>";
+echo "<br>";
+
+print_r($resultadoUnion);
+
+echo "<br>";
+echo "<br>";
+
+print_r($resultadoUnionInterseccion);
+
+echo "<br>";
+echo "<br>";
+
+print_r($colores2);
 
 
 
 
-
-
-
-
+print_r($colores2);
 
 
 
